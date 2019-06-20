@@ -526,10 +526,10 @@ function rollDice(): 1 | 2 | 3 | 4 | 5 | 6 {
 }
 ```
 
-These are seldom written explicitly, they can be useful when narrowing can catch bugs:
+Though these are seldom written explicitly, they can be useful when narrowing can catch bugs:
 
 ```ts
-function foo(x: number) {
+function foo(x: 1 | 2) {
     if (x !== 1 || x !== 2) {
         //         ~~~~~~~
         // Operator '!==' cannot be applied to types '1' and '2'.
